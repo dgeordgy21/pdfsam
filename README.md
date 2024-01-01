@@ -7,3 +7,10 @@ The container is now accessible via a browser : https://IP:6901
 
     User : kasm_user
     Password: password
+
+
+
+
+
+
+    sudo docker build -t sublime-text:example -f Dockerfile .
