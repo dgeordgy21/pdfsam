@@ -1,0 +1,9 @@
+name: pdfsam
+services:
+    pdfsam:
+        shm_size: 512m
+        ports:
+            - 6901:6901
+        environment:
+            - VNC_PW=password
+        image: dgeordgy21/pdfsam:latest
