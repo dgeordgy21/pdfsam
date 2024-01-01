@@ -6,4 +6,6 @@ services:
             - 6901:6901
         environment:
             - VNC_PW=password
-        image: dgeordgy21/pdfsam:latest
+        image: 	dgeordgy21/pdfsam
+        volumes:
+            - .:/home/kasm-user/pdfsam-data
