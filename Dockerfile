@@ -13,6 +13,8 @@ RUN wget -q -O /tmp/pdfsam.deb https://github.com/torakiki/pdfsam/releases/downl
   && dpkg -i /tmp/pdfsam.deb \
   && rm /tmp/pdfsam.deb
 
+RUN echo "/usr/bin/desktop_ready && /opt/pdfsam-basic/bin/pdfsam-basic" > $STARTUPDIR/custom_startup.sh \
+&& chmod +x $STARTUPDIR/custom_startup.sh
 
 ######### End Customizations ###########
 
