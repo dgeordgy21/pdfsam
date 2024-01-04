@@ -13,4 +13,4 @@ The container is now accessible via a browser : https://IP:6901
 
 
 
-    sudo docker build -t sublime-text:example -f Dockerfile .
+    sudo docker build -t dgeordgy21/pdfsam -f Dockerfile .
